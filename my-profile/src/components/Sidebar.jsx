@@ -7,7 +7,7 @@ export const Sidebar = ({ profile }) => (
     <ProfileAvatar 
       name={profile.name} 
       title={profile.title} 
-      imageUrl={profile.imageUrl} // Truyền prop imageUrl vào đây
+      imageUrl={profile.imageUrl} 
     />
     <ContactInfo contact={profile.contact} />
     <SocialLinks />

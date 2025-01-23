@@ -6,7 +6,6 @@ export const Header = () => {
     { title: "Resume", path: "/resume" },
     { title: "Portfolio", path: "/portfolio" },
     { title: "Blog", path: "/blog" },
-    // { title: 'CX', path: '/cx' }
   ];
 
   return (
