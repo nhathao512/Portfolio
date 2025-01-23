@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const menuItems = [
-    { title: 'About', path: '/about' },
-    { title: 'Resume', path: '/resume' },
-    { title: 'Portfolio', path: '/portfolio' },
-    { title: 'Blog', path: '/blog' },
+    { title: "About", path: "/about" },
+    { title: "Resume", path: "/resume" },
+    { title: "Portfolio", path: "/portfolio" },
+    { title: "Blog", path: "/blog" },
     // { title: 'CX', path: '/cx' }
   ];
 

@@ -1,5 +1,5 @@
-import { About } from './About';
-import { Services } from './Services';
+import { About } from "./About";
+import { Services } from "./Services";
 
 export const MainContent = ({ profile }) => (
   <div className="md:col-span-3">

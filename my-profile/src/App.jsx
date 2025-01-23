@@ -7,9 +7,9 @@ import avatar from './assets/avatar.jpg'
 const App = () => {
   const profile = {
     name: "Võ Nhật Hào",
-    title: "A future Software Developer from Vietnam",
+    title: "Software Engineering Student at Ton Duc Thang University | 2026 Graduation",
     about:
-      "A future Software Developer from Vietnam. I enjoy turning complex problems into simple, beautiful and intuitive designs.",
+      "𝗧𝗵𝗶𝗿𝗱-𝘆𝗲𝗮𝗿 software engineering student, future full-stack developer, with 1 year of experience developing web applications for the education industry. My 𝗮𝗺𝗯𝗶𝘁𝗶𝗼𝗻 is to apply technology and AI to change the traditional way of software development.",
     contact: {
       email: "vonhathao641@gmail.com",
       phone: "+84 334 944 908",

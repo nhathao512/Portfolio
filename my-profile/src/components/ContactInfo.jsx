@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export const ContactInfo = ({ contact }) => (
   <div className="w-full space-y-4">
