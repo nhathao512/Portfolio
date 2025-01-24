@@ -1,6 +1,6 @@
 export const ProfileAvatar = ({ name, title, imageUrl }) => (
   <div className="flex flex-col items-center text-center">
-    <div className="w-25 h-30 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+    <div className="w-25 h-30 rounded-xl mb-4 overflow-hidden border-4 border-cyan-400">
       <img
         src={imageUrl}
         alt="Profile"

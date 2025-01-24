@@ -9,18 +9,23 @@ export const Header = () => {
   ];
 
   return (
-    <header className="py-4 px-6 bg-gray-800 rounded-xl mb-8">
-      <nav className="flex justify-end space-x-6">
-        {menuItems.map((item) => (
-          <Link
-            key={item.path}
-            to={item.path}
-            className="text-gray-400 hover:text-yellow-500 transition-colors duration-200"
-          >
-            {item.title}
-          </Link>
-        ))}
-      </nav>
+    <header className="bg-gray-900 shadow-lg rounded-xl mb-8">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="text-cyan-400 text-2xl font-bold">
+          <Link to="/">TechProfile</Link>
+        </div>
+        <nav className="flex space-x-8">
+          {menuItems.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              className="text-gray-300 text-lg font-medium hover:text-cyan-400 hover:underline transition-all duration-200"
+            >
+              {item.title}
+            </Link>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 };

@@ -2,7 +2,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
 import { MainContent } from "./components/MainContent";
-import avatar from './assets/avatar.jpg'
+import avatar from "./assets/avatar.jpg";
 
 const App = () => {
   const profile = {
@@ -19,7 +19,7 @@ const App = () => {
       {
         title: "Web Development",
         description:
-          "High-quality development of sites at the professional level.",
+          "High-quality development of websites at the professional level.",
         icon: "💻",
       },
       {
@@ -41,14 +41,14 @@ const App = () => {
         icon: "📸",
       },
     ],
-    imageUrl: avatar, // Thêm đường dẫn ảnh vào đây
+    imageUrl: avatar,
   };
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-900 text-gray-100 p-8">
-        <div className="max-w-6xl mx-auto">
-          {/* <Header /> */}
+      <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black text-gray-100 p-8">
+        <div className="max-w-7xl mx-auto">
+          <Header />
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <Sidebar profile={profile} />
             <MainContent profile={profile} />
