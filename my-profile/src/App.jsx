@@ -7,7 +7,8 @@ import avatar from "./assets/avatar.jpg";
 const App = () => {
   const profile = {
     name: "Võ Nhật Hào",
-    title: "Software Engineering Student at Ton Duc Thang University | 2026 Graduation",
+    title:
+      "Software Engineering Student at Ton Duc Thang University | 2026 Graduation",
     about:
       "𝗧𝗵𝗶𝗿𝗱-𝘆𝗲𝗮𝗿 software engineering student, future full-stack developer, with 1 year of experience developing web applications for the education industry. My 𝗮𝗺𝗯𝗶𝘁𝗶𝗼𝗻 is to apply technology and AI to change the traditional way of software development.",
     contact: {
@@ -46,7 +47,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black text-gray-100 p-8">
+      <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black bg-[length:200%_200%] animate-wave text-gray-100 p-8">
         <div className="max-w-7xl mx-auto">
           <Header />
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

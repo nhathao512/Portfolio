@@ -26,7 +26,7 @@ export const Technologies = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black rounded-2xl p-6 shadow-lg mt-8 overflow-x-auto">
+    <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black rounded-2xl p-6 shadow-lg mt-8 overflow-hidden">
       <h2 className="text-xl font-bold text-cyan-400 mb-4">Technologies</h2>
       <div className="flex space-x-12 animate-marquee">
         {techStack.map((tech, index) => {

@@ -12,7 +12,7 @@ export const Header = () => {
     <header className="bg-gray-900 shadow-lg rounded-xl mb-8">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-cyan-400 text-2xl font-bold">
-          <Link to="/">TechProfile</Link>
+          <Link to="/">😎</Link>
         </div>
         <nav className="flex space-x-8">
           {menuItems.map((item) => (
