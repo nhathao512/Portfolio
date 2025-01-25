@@ -9,7 +9,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="bg-gray-900 shadow-lg rounded-xl mb-8">
+    <header className="bg-gray-800 shadow-lg rounded-xl mb-8">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-cyan-400 text-2xl font-bold">
           <Link to="/">😎</Link>

@@ -24,9 +24,9 @@ export default {
         },
       },
       animation: {
-        marquee: "marquee 30s linear infinite",
-        wave: "wave 8s ease-in-out infinite",
-        rainbowBorder: "rainbowBorder 5s linear infinite",
+        marquee: "marquee 20s linear infinite",
+        wave: "wave 10s ease-in-out infinite",
+        rainbowBorder: "rainbowBorder 8s linear infinite",
       },
     },
   },
