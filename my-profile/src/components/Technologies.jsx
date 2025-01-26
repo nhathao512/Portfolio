@@ -9,12 +9,17 @@ import {
   FaJsSquare,
   FaHtml5,
   FaCss3,
+  FaPhp,
+  FaBootstrap,
+  FaAws,
 } from "react-icons/fa";
+import { SiSpringboot, SiMongodb, SiC } from "react-icons/si";
 
 export const Technologies = () => {
   const techStack = [
     { name: "Node.js", icon: FaNodeJs },
     { name: "Java", icon: FaJava },
+    { name: "Spring Boot", icon: SiSpringboot },
     { name: "MySQL", icon: FaDatabase },
     { name: "React", icon: FaReact },
     { name: "Docker", icon: FaDocker },
@@ -23,6 +28,12 @@ export const Technologies = () => {
     { name: "JavaScript", icon: FaJsSquare },
     { name: "HTML", icon: FaHtml5 },
     { name: "CSS", icon: FaCss3 },
+    { name: "PHP", icon: FaPhp },
+    { name: "Bootstrap", icon: FaBootstrap },
+    { name: "AWS", icon: FaAws },
+    { name: "MongoDB", icon: SiMongodb },
+    { name: "C", icon: SiC },
+
   ];
 
   return (
