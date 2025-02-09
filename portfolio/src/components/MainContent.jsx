@@ -1,4 +1,4 @@
-import { About } from "./About";
+import { About } from "../pages/About";
 import { Services } from "./Services";
 import { Technologies } from "./Technologies";
 
