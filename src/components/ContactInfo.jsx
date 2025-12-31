@@ -4,22 +4,16 @@ export const ContactInfo = ({ contact }) => (
   <div className="w-full space-y-3">
     <a
       href={`mailto:${contact.email}`}
-      className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors group"
+      className="group flex items-center space-x-3 text-gray-300 transition-colors hover:text-blue-400"
     >
-      <Mail
-        size={18}
-        className="text-blue-400 group-hover:scale-110 transition-transform"
-      />
+      <Mail size={18} className="text-blue-400 transition-transform group-hover:scale-110" />
       <span className="text-sm">{contact.email}</span>
     </a>
     <a
       href={`tel:${contact.phone}`}
-      className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors group"
+      className="group flex items-center space-x-3 text-gray-300 transition-colors hover:text-blue-400"
     >
-      <Phone
-        size={18}
-        className="text-blue-400 group-hover:scale-110 transition-transform"
-      />
+      <Phone size={18} className="text-blue-400 transition-transform group-hover:scale-110" />
       <span className="text-sm">{contact.phone}</span>
     </a>
     <div className="flex items-center space-x-3 text-gray-300">

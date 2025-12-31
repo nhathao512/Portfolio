@@ -14,12 +14,12 @@ export default {
           "100%": { backgroundPosition: "0% 50%" },
         },
         rainbowBorder: {
-          "0%": { borderColor: "#0ea5e9" }, 
-          "20%": { borderColor: "#10b981" }, 
-          "40%": { borderColor: "#14b8a6" }, 
-          "60%": { borderColor: "#7c3aed" }, 
-          "80%": { borderColor: "#2563eb" }, 
-          "100%": { borderColor: "#0ea5e9" }, 
+          "0%": { borderColor: "#0ea5e9" },
+          "20%": { borderColor: "#10b981" },
+          "40%": { borderColor: "#14b8a6" },
+          "60%": { borderColor: "#7c3aed" },
+          "80%": { borderColor: "#2563eb" },
+          "100%": { borderColor: "#0ea5e9" },
         },
       },
       animation: {

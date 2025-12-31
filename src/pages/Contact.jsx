@@ -1,13 +1,4 @@
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-  Github,
-  Linkedin,
-  Facebook,
-  Instagram,
-} from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Facebook, Instagram } from "lucide-react";
 import { useState } from "react";
 
 export const Contact = () => {
@@ -60,25 +51,20 @@ export const Contact = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-        <h1 className="text-4xl font-bold text-blue-400 mb-3">Get In Touch</h1>
-        <p className="text-gray-300 text-lg">
+      <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
+        <h1 className="mb-3 text-4xl font-bold text-blue-400">Get In Touch</h1>
+        <p className="text-lg text-gray-300">
           Have a question or want to work together? Feel free to reach out!
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         {/* Contact Form */}
-        <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-          <h2 className="text-2xl font-semibold text-blue-400 mb-6">
-            Send a Message
-          </h2>
+        <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
+          <h2 className="mb-6 text-2xl font-semibold text-blue-400">Send a Message</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-300 mb-2"
-              >
+              <label htmlFor="name" className="mb-2 block text-sm font-medium text-gray-300">
                 Your Name
               </label>
               <input
@@ -87,16 +73,13 @@ export const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors"
+                className="w-full rounded-lg border border-gray-600/50 bg-gray-700/50 px-4 py-3 text-gray-100 placeholder-gray-400 transition-colors focus:border-blue-400 focus:outline-none"
                 placeholder="John Doe"
                 required
               />
             </div>
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-300 mb-2"
-              >
+              <label htmlFor="email" className="mb-2 block text-sm font-medium text-gray-300">
                 Your Email
               </label>
               <input
@@ -105,16 +88,13 @@ export const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors"
+                className="w-full rounded-lg border border-gray-600/50 bg-gray-700/50 px-4 py-3 text-gray-100 placeholder-gray-400 transition-colors focus:border-blue-400 focus:outline-none"
                 placeholder="john@example.com"
                 required
               />
             </div>
             <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-300 mb-2"
-              >
+              <label htmlFor="message" className="mb-2 block text-sm font-medium text-gray-300">
                 Message
               </label>
               <textarea
@@ -123,14 +103,14 @@ export const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows="5"
-                className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors resize-none"
+                className="w-full resize-none rounded-lg border border-gray-600/50 bg-gray-700/50 px-4 py-3 text-gray-100 placeholder-gray-400 transition-colors focus:border-blue-400 focus:outline-none"
                 placeholder="Your message here..."
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-blue-600 hover:shadow-xl"
             >
               <Send size={18} />
               <span>Send Message</span>
@@ -141,21 +121,19 @@ export const Contact = () => {
         {/* Contact Info & Social */}
         <div className="space-y-6">
           {/* Contact Info Cards */}
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-            <h2 className="text-2xl font-semibold text-blue-400 mb-6">
-              Contact Information
-            </h2>
+          <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
+            <h2 className="mb-6 text-2xl font-semibold text-blue-400">Contact Information</h2>
             <div className="space-y-4">
               <a
                 href="mailto:vonhathao.it@gmail.com"
-                className="flex items-center gap-4 p-4 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-colors group"
+                className="group flex items-center gap-4 rounded-lg bg-gray-700/30 p-4 transition-colors hover:bg-gray-700/50"
               >
-                <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center group-hover:bg-blue-500/30 transition-colors">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/20 transition-colors group-hover:bg-blue-500/30">
                   <Mail size={24} className="text-blue-400" />
                 </div>
                 <div>
                   <div className="text-sm text-gray-400">Email</div>
-                  <div className="text-gray-200 group-hover:text-blue-400 transition-colors">
+                  <div className="text-gray-200 transition-colors group-hover:text-blue-400">
                     vonhathao.it@gmail.com
                   </div>
                 </div>
@@ -163,21 +141,21 @@ export const Contact = () => {
 
               <a
                 href="tel:+84334944908"
-                className="flex items-center gap-4 p-4 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-colors group"
+                className="group flex items-center gap-4 rounded-lg bg-gray-700/30 p-4 transition-colors hover:bg-gray-700/50"
               >
-                <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center group-hover:bg-blue-500/30 transition-colors">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/20 transition-colors group-hover:bg-blue-500/30">
                   <Phone size={24} className="text-blue-400" />
                 </div>
                 <div>
                   <div className="text-sm text-gray-400">Phone</div>
-                  <div className="text-gray-200 group-hover:text-blue-400 transition-colors">
+                  <div className="text-gray-200 transition-colors group-hover:text-blue-400">
                     +84 334 944 908
                   </div>
                 </div>
               </a>
 
-              <div className="flex items-center gap-4 p-4 bg-gray-700/30 rounded-lg">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
+              <div className="flex items-center gap-4 rounded-lg bg-gray-700/30 p-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/20">
                   <MapPin size={24} className="text-blue-400" />
                 </div>
                 <div>
@@ -189,10 +167,8 @@ export const Contact = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-            <h2 className="text-2xl font-semibold text-blue-400 mb-6">
-              Connect With Me
-            </h2>
+          <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
+            <h2 className="mb-6 text-2xl font-semibold text-blue-400">Connect With Me</h2>
             <div className="grid grid-cols-2 gap-4">
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
@@ -202,15 +178,13 @@ export const Contact = () => {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`flex items-center gap-3 p-4 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-all hover:scale-105 group ${social.color}`}
+                    className={`group flex items-center gap-3 rounded-lg bg-gray-700/30 p-4 transition-all hover:scale-105 hover:bg-gray-700/50 ${social.color}`}
                   >
                     <Icon
                       size={24}
-                      className="text-gray-300 group-hover:scale-110 transition-transform"
+                      className="text-gray-300 transition-transform group-hover:scale-110"
                     />
-                    <span className="text-gray-300 font-medium">
-                      {social.name}
-                    </span>
+                    <span className="font-medium text-gray-300">{social.name}</span>
                   </a>
                 );
               })}

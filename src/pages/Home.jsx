@@ -30,43 +30,27 @@ export const Home = () => {
   return (
     <div className="space-y-8">
       {/* Hero Section */}
-      <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-        <div className="flex items-center gap-3 mb-4">
+      <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
+        <div className="mb-4 flex items-center gap-3">
           <span className="text-5xl">👋</span>
-          <h1 className="text-4xl font-bold text-blue-400">
-            Hi, I'm Võ Nhật Hào
-          </h1>
+          <h1 className="text-4xl font-bold text-blue-400">Hi, I&apos;m Võ Nhật Hào</h1>
         </div>
 
-        <p className="text-gray-300 text-xl leading-relaxed mb-6">
-          Final-year{" "}
-          <span className="text-blue-300 font-semibold">
-            Software Engineering
-          </span>{" "}
-          student at{" "}
-          <span className="text-blue-300 font-semibold">
-            Ton Duc Thang University
-          </span>
-          , graduating 2026. Passionate about building{" "}
-          <span className="text-blue-300 font-semibold">
-            full-stack web applications
-          </span>{" "}
-          and <span className="text-blue-300 font-semibold">mobile apps</span>{" "}
-          with modern technologies.
+        <p className="mb-6 text-xl leading-relaxed text-gray-300">
+          Final-year <span className="font-semibold text-blue-300">Software Engineering</span>{" "}
+          student at <span className="font-semibold text-blue-300">Ton Duc Thang University</span>,
+          graduating 2026. Passionate about building{" "}
+          <span className="font-semibold text-blue-300">full-stack web applications</span> and{" "}
+          <span className="font-semibold text-blue-300">mobile apps</span> with modern technologies.
         </p>
 
         <div className="flex flex-wrap gap-4">
           <Link
             to="/project"
-            className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-blue-600 hover:shadow-xl"
           >
             <span>View My Projects</span>
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
+            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -77,7 +61,7 @@ export const Home = () => {
           </Link>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors border border-blue-400/30"
+            className="inline-flex items-center gap-2 rounded-lg border border-blue-400/30 bg-gray-700 px-6 py-3 font-semibold text-white transition-colors hover:bg-gray-600"
           >
             <span>Get In Touch</span>
           </Link>
@@ -85,73 +69,66 @@ export const Home = () => {
       </div>
 
       {/* Quick Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:bg-gray-800/60 transition-all hover:scale-105"
+            className="rounded-xl bg-gray-800/50 p-6 shadow-lg backdrop-blur-sm transition-all hover:scale-105 hover:bg-gray-800/60"
           >
-            <div className="text-4xl mb-3">{stat.icon}</div>
-            <div className="text-3xl font-bold text-blue-400 mb-1">
-              {stat.value}
-            </div>
-            <div className="text-gray-400 text-sm">{stat.label}</div>
+            <div className="mb-3 text-4xl">{stat.icon}</div>
+            <div className="mb-1 text-3xl font-bold text-blue-400">{stat.value}</div>
+            <div className="text-sm text-gray-400">{stat.label}</div>
           </div>
         ))}
       </div>
 
       {/* Featured Projects */}
-      <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-        <h2 className="text-2xl font-semibold text-blue-400 mb-6 flex items-center gap-2">
+      <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
+        <h2 className="mb-6 flex items-center gap-2 text-2xl font-semibold text-blue-400">
           <span>⭐</span>
           Featured Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div className="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2">
           {featuredProjects.map((project, index) => (
             <Link
               key={index}
               to={project.link}
-              className="bg-gray-700/50 backdrop-blur-sm rounded-xl p-6 hover:bg-gray-700/70 transition-all hover:scale-[1.02] border border-gray-600/30 hover:border-blue-400/50 group"
+              className="group rounded-xl border border-gray-600/30 bg-gray-700/50 p-6 backdrop-blur-sm transition-all hover:scale-[1.02] hover:border-blue-400/50 hover:bg-gray-700/70"
             >
-              <h3 className="text-xl font-semibold text-blue-300 mb-2 group-hover:text-blue-400 transition-colors">
+              <h3 className="mb-2 text-xl font-semibold text-blue-300 transition-colors group-hover:text-blue-400">
                 {project.name}
               </h3>
-              <p className="text-gray-400 text-sm">{project.tech}</p>
+              <p className="text-sm text-gray-400">{project.tech}</p>
             </Link>
           ))}
         </div>
         <Link
           to="/project"
-          className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center gap-2 group"
+          className="group inline-flex items-center gap-2 font-medium text-blue-400 hover:text-blue-300"
         >
           <span>View all projects</span>
           <svg
-            className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+            className="h-4 w-4 transition-transform group-hover:translate-x-1"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </Link>
       </div>
 
       {/* Tech Highlights */}
-      <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-        <h2 className="text-2xl font-semibold text-blue-400 mb-6">What I Do</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
+        <h2 className="mb-6 text-2xl font-semibold text-blue-400">What I Do</h2>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {techHighlights.map((tech, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 bg-gray-700/30 rounded-lg p-4 hover:bg-gray-700/50 transition-colors"
+              className="flex items-center gap-3 rounded-lg bg-gray-700/30 p-4 transition-colors hover:bg-gray-700/50"
             >
-              <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-              <span className="text-gray-300 font-medium">{tech}</span>
+              <div className="h-2 w-2 rounded-full bg-blue-400"></div>
+              <span className="font-medium text-gray-300">{tech}</span>
             </div>
           ))}
         </div>

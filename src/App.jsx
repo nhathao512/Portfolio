@@ -13,8 +13,7 @@ import avatar from "./assets/avatar.jpg";
 const App = () => {
   const profile = {
     name: "Võ Nhật Hào",
-    title:
-      "Software Engineering Student at Ton Duc Thang University | 2026 Graduation",
+    title: "Software Engineering Student at Ton Duc Thang University | 2026 Graduation",
     about:
       "Final-year Software Engineering student, soon-to-be graduate and aspiring full-stack developer, with 1 year of experience building web applications for the education industry. My ambition is to leverage technology and AI to transform traditional software development practices.",
     contact: {
@@ -25,26 +24,22 @@ const App = () => {
     services: [
       {
         title: "Web Development",
-        description:
-          "High-quality development of websites at the professional level.",
+        description: "High-quality development of websites at the professional level.",
         icon: "💻",
       },
       {
         title: "Web Design",
-        description:
-          "The most modern and high-quality design made at a professional level.",
+        description: "The most modern and high-quality design made at a professional level.",
         icon: "🎨",
       },
       {
         title: "Mobile Apps",
-        description:
-          "Professional development of applications for iOS and Android.",
+        description: "Professional development of applications for iOS and Android.",
         icon: "📱",
       },
       {
         title: "Photography",
-        description:
-          "I make high-quality photos of any category at a professional level.",
+        description: "I make high-quality photos of any category at a professional level.",
         icon: "📸",
       },
     ],
@@ -73,10 +68,10 @@ const App = () => {
       {/* Liquid Blob Background */}
       <div className="liquid-blob-bg"></div>
 
-      <div className="min-h-screen text-gray-100 p-8 relative">
-        <div className="max-w-7xl mx-auto">
+      <div className="relative min-h-screen p-8 text-gray-100">
+        <div className="mx-auto max-w-7xl">
           <Header />
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8 items-start">
+          <div className="mt-8 grid grid-cols-1 items-start gap-8 md:grid-cols-4">
             <Sidebar profile={profile} />
             <main className="md:col-span-3">
               <Routes>

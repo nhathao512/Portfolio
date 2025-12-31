@@ -36,17 +36,17 @@ export const Technologies = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-gray-800 via-gray-800 to-gray-900 rounded-2xl p-6 shadow-lg mt-8 overflow-hidden">
-      <h2 className="text-xl font-bold text-blue-400 mb-4">Technologies</h2>
-      <div className="flex space-x-12 animate-marquee">
+    <div className="mt-8 overflow-hidden rounded-2xl bg-gradient-to-r from-gray-800 via-gray-800 to-gray-900 p-6 shadow-lg">
+      <h2 className="mb-4 text-xl font-bold text-blue-400">Technologies</h2>
+      <div className="flex animate-marquee space-x-12">
         {techStack.map((tech, index) => {
           const TechIcon = tech.icon;
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-center text-gray-300 hover:text-blue-400 transition-colors duration-300"
+              className="flex flex-col items-center justify-center text-gray-300 transition-colors duration-300 hover:text-blue-400"
             >
-              <TechIcon className="w-12 h-12 mb-2" />
+              <TechIcon className="mb-2 h-12 w-12" />
               <span className="text-sm">{tech.name}</span>
             </div>
           );

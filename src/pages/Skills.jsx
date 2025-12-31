@@ -67,13 +67,11 @@ export const Skills = () => {
   ];
 
   return (
-    <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+    <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-blue-400 mb-3">
-          Skills & Technologies
-        </h1>
-        <p className="text-gray-400 text-lg">
-          Technologies I've worked with across my projects
+        <h1 className="mb-3 text-4xl font-bold text-blue-400">Skills & Technologies</h1>
+        <p className="text-lg text-gray-400">
+          Technologies I&apos;ve worked with across my projects
         </p>
       </div>
 
@@ -81,29 +79,27 @@ export const Skills = () => {
         {skillCategories.map((category, categoryIndex) => (
           <div
             key={categoryIndex}
-            className="bg-gray-700/30 backdrop-blur-sm rounded-xl p-6 hover:bg-gray-700/40 transition-colors"
+            className="rounded-xl bg-gray-700/30 p-6 backdrop-blur-sm transition-colors hover:bg-gray-700/40"
           >
-            <h2 className="text-2xl font-semibold text-blue-400 mb-5 flex items-center gap-3">
+            <h2 className="mb-5 flex items-center gap-3 text-2xl font-semibold text-blue-400">
               <span className="text-3xl">{category.icon}</span>
               {category.category}
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               {category.skills.map((skill, skillIndex) => (
                 <div
                   key={skillIndex}
-                  className="bg-gray-600/30 rounded-lg p-4 hover:bg-gray-600/50 transition-all duration-300 hover:scale-[1.02] border border-gray-600/30 hover:border-blue-400/30"
+                  className="rounded-lg border border-gray-600/30 bg-gray-600/30 p-4 transition-all duration-300 hover:scale-[1.02] hover:border-blue-400/30 hover:bg-gray-600/50"
                 >
-                  <div className="flex items-start justify-between mb-2">
-                    <h3 className="text-lg font-semibold text-blue-300">
-                      {skill.name}
-                    </h3>
+                  <div className="mb-2 flex items-start justify-between">
+                    <h3 className="text-lg font-semibold text-blue-300">{skill.name}</h3>
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {skill.projects.map((project, projectIndex) => (
                       <span
                         key={projectIndex}
-                        className="text-xs px-2.5 py-1 bg-blue-500/20 text-blue-200 rounded-full border border-blue-400/30"
+                        className="rounded-full border border-blue-400/30 bg-blue-500/20 px-2.5 py-1 text-xs text-blue-200"
                       >
                         {project}
                       </span>

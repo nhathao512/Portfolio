@@ -4,17 +4,13 @@ import { SocialLinks } from "./SocialLinks";
 import { Download } from "lucide-react";
 
 export const Sidebar = ({ profile }) => (
-  <div className="md:col-span-1 space-y-6">
+  <div className="space-y-6 md:col-span-1">
     {/* Profile Card */}
-    <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-      <ProfileAvatar
-        name={profile.name}
-        title={profile.title}
-        imageUrl={profile.imageUrl}
-      />
+    <div className="rounded-2xl bg-gray-800/50 p-6 shadow-lg backdrop-blur-sm">
+      <ProfileAvatar name={profile.name} title={profile.title} imageUrl={profile.imageUrl} />
 
       {/* Quick Stats */}
-      <div className="grid grid-cols-2 gap-3 mb-6 pt-6 border-t border-gray-700/50">
+      <div className="mb-6 grid grid-cols-2 gap-3 border-t border-gray-700/50 pt-6">
         <div className="text-center">
           <div className="text-2xl font-bold text-blue-400">6+</div>
           <div className="text-xs text-gray-400">Projects</div>
@@ -28,7 +24,7 @@ export const Sidebar = ({ profile }) => (
       {/* Download Resume Button */}
       <a
         href="#"
-        className="w-full inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-3 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-blue-600 hover:shadow-xl"
       >
         <Download size={18} />
         <span>Download Resume</span>
@@ -36,14 +32,14 @@ export const Sidebar = ({ profile }) => (
     </div>
 
     {/* Contact Info Card */}
-    <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-      <h3 className="text-lg font-semibold text-blue-400 mb-4">Contact Info</h3>
+    <div className="rounded-2xl bg-gray-800/50 p-6 shadow-lg backdrop-blur-sm">
+      <h3 className="mb-4 text-lg font-semibold text-blue-400">Contact Info</h3>
       <ContactInfo contact={profile.contact} />
     </div>
 
     {/* Social Links Card */}
-    <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
-      <h3 className="text-lg font-semibold text-blue-400 mb-4">Connect</h3>
+    <div className="rounded-2xl bg-gray-800/50 p-6 shadow-lg backdrop-blur-sm">
+      <h3 className="mb-4 text-lg font-semibold text-blue-400">Connect</h3>
       <SocialLinks />
     </div>
   </div>

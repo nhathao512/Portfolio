@@ -6,6 +6,6 @@ export const MainContent = ({ profile }) => (
   <div className="md:col-span-3">
     <About about={profile.about} />
     <Services services={profile.services} />
-    <Technologies/>
+    <Technologies />
   </div>
 );
