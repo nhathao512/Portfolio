@@ -1,4 +1,4 @@
-import { ServiceCard } from "./ServiceCard";
+import { ServiceCard } from "../common/ServiceCard";
 
 export const Services = ({ services }) => (
   <div className="rounded-2xl bg-gray-800 p-6 shadow-lg">

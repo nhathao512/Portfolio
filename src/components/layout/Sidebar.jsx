@@ -1,6 +1,6 @@
-import { ProfileAvatar } from "./ProfileAvatar";
-import { ContactInfo } from "./ContactInfo";
-import { SocialLinks } from "./SocialLinks";
+import { ProfileAvatar } from "../profile/ProfileAvatar";
+import { ContactInfo } from "../profile/ContactInfo";
+import { SocialLinks } from "../profile/SocialLinks";
 import { Download } from "lucide-react";
 
 export const Sidebar = ({ profile }) => (

@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 
+![Portfolio Screenshot](./public/assets/readme.png)
+
 ## 🚀 Features
 
 - **Modern UI/UX**: Glassmorphism design with blue theme

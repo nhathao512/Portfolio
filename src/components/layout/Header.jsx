@@ -9,7 +9,7 @@ export const Header = () => {
   const menuItems = [
     { title: "Home", path: "/home" },
     { title: "About", path: "/about" },
-    { title: "Projects", path: "/project" },
+    { title: "Projects", path: "/projects" },
     { title: "Skills", path: "/skills" },
     { title: "Contact", path: "/contact" },
   ];

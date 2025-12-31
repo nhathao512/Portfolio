@@ -1,4 +1,4 @@
-import { Technologies } from "../components/Technologies";
+import { Technologies } from "../components/common/Technologies";
 
 export const Skills = () => {
   const skillCategories = [
