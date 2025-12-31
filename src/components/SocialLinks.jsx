@@ -22,7 +22,7 @@ export const SocialLinks = () => (
       <img src={Logo_FB} alt="Facebook" className="w-6 h-6 cursor-pointer" />
     </a>
     <a
-      href="https://www.linkedin.com/in/vo-nhat-hao/"
+      href="https://www.linkedin.com/in/nhathao512/"
       target="_blank"
       rel="noopener noreferrer"
       className="transition-colors duration-200"
@@ -30,7 +30,7 @@ export const SocialLinks = () => (
       <img src={Logo_LI} alt="LinkedIn" className="w-6 h-6 cursor-pointer" />
     </a>
     <a
-      href="https://www.instagram.com/vo.nhathao.512/"
+      href="https://www.instagram.com/nhathao512_/"
       target="_blank"
       rel="noopener noreferrer"
       className="transition-colors duration-200"
