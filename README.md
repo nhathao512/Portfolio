@@ -33,7 +33,7 @@ A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone <https://github.com/nhathao512/Portfolio>
 cd Portfolio
 
 # Install dependencies
