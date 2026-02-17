@@ -2,9 +2,9 @@
 
 A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 
-![Portfolio Screenshot](./public/assets/readme.png)
+![Portfolio Screenshot](https://raw.githubusercontent.com/nhathao512/Portfolio/main/public/assets/readme.png)
 
-## 🚀 Features
+## Features
 
 - **Modern UI/UX**: Glassmorphism design with blue theme
 - **Responsive**: Works on all devices
@@ -13,7 +13,7 @@ A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 - **Formatted**: Prettier for consistent code style
 - **CI/CD**: Automated linting and formatting checks
 
-## 📦 Tech Stack
+## Tech Stack
 
 - **Framework**: React 18
 - **Build Tool**: Vite
@@ -22,7 +22,7 @@ A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 - **Icons**: Lucide React, React Icons
 - **Code Quality**: ESLint + Prettier
 
-## 🛠️ Setup
+## Setup
 
 ### Prerequisites
 
@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-## 📜 Available Scripts
+## Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
@@ -53,7 +53,7 @@ npm run dev
 - `npm run format` - Format code with Prettier
 - `npm run format:check` - Check code formatting
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 This project uses GitHub Actions for automated code quality checks:
 
@@ -66,7 +66,7 @@ This project uses GitHub Actions for automated code quality checks:
 - Push to `main` or `master` branch
 - Pull requests to `main` or `master` branch
 
-## 🚀 Deployment
+## Deployment
 
 ### Deploy to Vercel
 
@@ -85,7 +85,7 @@ This project uses GitHub Actions for automated code quality checks:
 
 No environment variables required for basic deployment.
 
-## 📝 Code Quality
+## Code Quality
 
 ### ESLint Configuration
 
@@ -101,7 +101,7 @@ No environment variables required for basic deployment.
 - Double quotes for strings
 - Tailwind CSS class sorting
 
-## 🎨 Color Scheme
+## Color Scheme
 
 The portfolio uses a professional blue/cyan color scheme:
 
@@ -109,11 +109,11 @@ The portfolio uses a professional blue/cyan color scheme:
 - Light: `blue-300`
 - Accents: `sky-400`
 
-## 📄 License
+## License
 
-MIT
+GNU General Public License
 
-## 👤 Author
+## Author
 
 **Võ Nhật Hào**
 
