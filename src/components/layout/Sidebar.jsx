@@ -23,7 +23,8 @@ export const Sidebar = ({ profile }) => (
 
       {/* Download Resume Button */}
       <a
-        href="#"
+        href="/files/CV.pdf"
+        download="Vo_Nhat_Hao_CV.pdf"
         className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-blue-500 px-4 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-blue-600 hover:shadow-xl"
       >
         <Download size={18} />

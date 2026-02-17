@@ -1,22 +1,23 @@
 import { Link } from "react-router-dom";
+import { TypewriterText } from "../components/common/TypewriterText";
 
 export const Home = () => {
   const stats = [
-    { label: "Projects Completed", value: "6+", icon: "🚀" },
-    { label: "Technologies", value: "15+", icon: "💻" },
-    { label: "Years Experience", value: "1+", icon: "⏱️" },
+    { label: "Projects Completed", value: "6+" },
+    { label: "Technologies", value: "15+" },
+    { label: "Years Experience", value: "1+" },
   ];
 
   const featuredProjects = [
     {
       name: "Online Store",
       tech: "Angular • Spring Boot • MySQL",
-      link: "/project",
+      link: "/projects",
     },
     {
       name: "Homeify Mobile App",
       tech: "Flutter • Firebase",
-      link: "/project",
+      link: "/projects",
     },
   ];
 
@@ -33,7 +34,9 @@ export const Home = () => {
       <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
         <div className="mb-4 flex items-center gap-3">
           <span className="text-5xl">👋</span>
-          <h1 className="text-4xl font-bold text-blue-400">Hi, I&apos;m Võ Nhật Hào</h1>
+          <h1 className="text-4xl font-bold text-blue-400">
+            Hi, I&apos;m <TypewriterText text="Võ Nhật Hào" speed={150} />
+          </h1>
         </div>
 
         <p className="mb-6 text-xl leading-relaxed text-gray-300">
@@ -46,7 +49,7 @@ export const Home = () => {
 
         <div className="flex flex-wrap gap-4">
           <Link
-            to="/project"
+            to="/projects"
             className="inline-flex items-center gap-2 rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-blue-600 hover:shadow-xl"
           >
             <span>View My Projects</span>
@@ -69,7 +72,7 @@ export const Home = () => {
       </div>
 
       {/* Quick Stats */}
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 text-center md:grid-cols-3">
         {stats.map((stat, index) => (
           <div
             key={index}
@@ -103,7 +106,7 @@ export const Home = () => {
           ))}
         </div>
         <Link
-          to="/project"
+          to="/projects"
           className="group inline-flex items-center gap-2 font-medium text-blue-400 hover:text-blue-300"
         >
           <span>View all projects</span>

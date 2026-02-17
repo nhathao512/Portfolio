@@ -1,11 +1,33 @@
 export const Projects = () => {
   const projects = [
     {
+      title: "Smart Job Finder",
+      description:
+        "Comprehensive job search platform with AI-powered CV matching and interview simulation. Features microservices architecture with Spring Boot backend, AI service using Python/Flask, Next.js web client, React admin dashboard, and Flutter mobile app. Includes real-time notifications, VNPay payment integration, and deployed on AWS EC2.",
+      tags: [
+        "Spring Boot",
+        "Python/Flask",
+        "Next.js",
+        "React",
+        "Flutter",
+        "AI/ML",
+        "MySQL",
+        "Redis",
+        "WebSocket",
+        "Docker",
+        "AWS",
+      ],
+      githubLink: "https://github.com/nhathao512",
+      image: "/images/smart_job_finder.png",
+      featured: true,
+    },
+    {
       title: "Online Store",
       description:
         "Full-stack e-commerce platform with Angular frontend, Spring Boot backend, MySQL database, and Docker containerization. A robust and scalable solution for modern web applications.",
       tags: ["Angular", "Spring Boot", "MySQL", "Docker"],
       githubLink: "https://github.com/nhathao512/Online-Store",
+      image: "/images/online_store.png",
       featured: true,
     },
     {
@@ -14,6 +36,13 @@ export const Projects = () => {
         "Mobile platform for room rental management built with Flutter. Streamlines the rental process for landlords and tenants with comprehensive features and intuitive interface.",
       tags: ["Flutter", "Dart", "Firebase", "Mobile"],
       githubLink: "https://github.com/nhathao512/homeify-mobile-app",
+      images: [
+        "/images/homeify1.png",
+        "/images/homeify2.png",
+        "/images/homeify3.png",
+        "/images/homeify4.png",
+        "/images/homeify5.png",
+      ],
       featured: true,
     },
     {
@@ -22,6 +51,13 @@ export const Projects = () => {
         "Gmail-inspired email application built with Flutter and Firebase. Features internal messaging, auto-reply, categorization, and real-time notifications - 70% functional parity with Gmail.",
       tags: ["Flutter", "Firebase", "Cloud Functions", "Firestore"],
       githubLink: "https://github.com/nhathao512/Simulated-Email-Service-Application",
+      images: [
+        "/images/gmail1.png",
+        "/images/gmail2.png",
+        "/images/gmail3.png",
+        "/images/gmail4.png",
+        "/images/gmail5.png",
+      ],
       featured: false,
     },
     {
@@ -30,6 +66,7 @@ export const Projects = () => {
         "E-commerce web application with Node.js backend, MongoDB database, and React + Tailwind CSS frontend. Fully containerized with Docker for easy deployment.",
       tags: ["Node.js", "React", "MongoDB", "Tailwind CSS", "Docker"],
       githubLink: "https://github.com/nhathao512/shopping-website",
+      image: "/images/baanhem.png",
       featured: false,
     },
     {
@@ -59,7 +96,7 @@ export const Projects = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -72,6 +109,29 @@ export const Projects = () => {
                 <span className="rounded-full bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-400">
                   ⭐ Featured
                 </span>
+              </div>
+            )}
+
+            {project.image && (
+              <div className="mb-4 overflow-hidden rounded-lg bg-gray-600/20">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full object-contain transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+            )}
+
+            {project.images && (
+              <div className="mb-4 flex gap-1 overflow-x-auto rounded-lg bg-gray-600/20 p-2">
+                {project.images.map((img, imgIndex) => (
+                  <img
+                    key={imgIndex}
+                    src={img}
+                    alt={`${project.title} - Screenshot ${imgIndex + 1}`}
+                    className="h-64 w-48 flex-shrink-0 rounded-lg object-contain transition-transform duration-300 hover:scale-105"
+                  />
+                ))}
               </div>
             )}
 
