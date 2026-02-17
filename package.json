@@ -1,8 +1,14 @@
 {
-  "name": "my-profile",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@nhathao512/portfolio",
+  "version": "1.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nhathao512/Portfolio.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
