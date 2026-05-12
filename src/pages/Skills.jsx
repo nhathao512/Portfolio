@@ -68,7 +68,7 @@ export const Skills = () => {
   ];
 
   return (
-    <section className="rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
+    <section className="scroll-reveal rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
       <div className="mb-8">
         <h1 className="mb-3 flex items-center gap-3 text-3xl font-bold text-cyan-300 sm:text-4xl">
           <Code2 size={32} />
@@ -86,7 +86,7 @@ export const Skills = () => {
           return (
             <article
               key={category.category}
-              className="rounded-lg border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10 sm:p-6"
+              className="scroll-reveal rounded-lg border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10 sm:p-6"
             >
               <h2 className="mb-5 flex items-center gap-3 text-xl font-semibold text-white sm:text-2xl">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-cyan-300/10 text-cyan-300">

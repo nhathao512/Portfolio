@@ -20,7 +20,7 @@ export const Sidebar = ({ profile }) => (
       </div>
 
       <a
-        href="/files/CV.pdf"
+        href="/files/VoNhatHao_SoftwareDeveloper.pdf"
         download="Vo_Nhat_Hao_CV.pdf"
         className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-cyan-500 px-4 py-3 font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition-colors hover:bg-cyan-300"
       >

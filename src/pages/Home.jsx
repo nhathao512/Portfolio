@@ -1,12 +1,27 @@
-import { ArrowRight, BriefcaseBusiness, Mail } from "lucide-react";
+import {
+  ArrowRight,
+  BriefcaseBusiness,
+  Code2,
+  Database,
+  Mail,
+  ServerCog,
+  Smartphone,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import { TypewriterText } from "../components/common/TypewriterText";
 
 export const Home = () => {
   const stats = [
-    { label: "Projects Completed", value: "6+" },
+    { label: "Projects Completed", value: "5+" },
     { label: "Technologies", value: "15+" },
     { label: "Years Experience", value: "1+" },
+  ];
+
+  const featuredSkills = [
+    { name: "React", focus: "Interactive web UI", icon: Code2 },
+    { name: "Spring Boot", focus: "Backend APIs", icon: ServerCog },
+    { name: "Flutter", focus: "Mobile apps", icon: Smartphone },
+    { name: "Firebase", focus: "Realtime features", icon: Database },
   ];
 
   const featuredProjects = [
@@ -31,12 +46,7 @@ export const Home = () => {
 
   return (
     <div className="space-y-5 lg:space-y-8">
-      <section className="overflow-hidden rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
-        {/* <div className="mb-4 inline-flex items-center gap-2 rounded-lg border border-cyan-300/20 bg-cyan-300/10 px-3 py-1.5 text-sm font-medium text-cyan-200">
-          <Sparkles size={16} />
-          Available for internship and junior roles
-        </div> */}
-
+      <section className="scroll-reveal overflow-hidden rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
         <h1 className="max-w-4xl text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
           Hi, I&apos;m{" "}
           <TypewriterText
@@ -72,7 +82,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+      <section className="scroll-reveal grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
         {stats.map((stat) => (
           <div
             key={stat.label}
@@ -84,7 +94,29 @@ export const Home = () => {
         ))}
       </section>
 
-      <section className="rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
+      <section className="scroll-reveal rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
+        <h2 className="mb-5 text-2xl font-semibold text-cyan-300">Featured Skills</h2>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          {featuredSkills.map((skill) => {
+            const Icon = skill.icon;
+
+            return (
+              <div
+                key={skill.name}
+                className="rounded-lg border border-white/10 bg-white/5 p-4 transition-all hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-cyan-300/10"
+              >
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-300/10 text-cyan-300">
+                  <Icon size={21} />
+                </div>
+                <h3 className="font-semibold text-white">{skill.name}</h3>
+                <p className="mt-1 text-sm text-gray-400">{skill.focus}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="scroll-reveal rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
         <h2 className="mb-5 text-2xl font-semibold text-cyan-300">Featured Projects</h2>
         <div className="mb-5 grid grid-cols-1 gap-4 md:grid-cols-2">
           {featuredProjects.map((project) => (
@@ -109,7 +141,7 @@ export const Home = () => {
         </Link>
       </section>
 
-      <section className="rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
+      <section className="scroll-reveal rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
         <h2 className="mb-5 text-2xl font-semibold text-cyan-300">What I Do</h2>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {techHighlights.map((tech) => (

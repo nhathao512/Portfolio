@@ -50,7 +50,7 @@ export const Contact = () => {
 
   return (
     <div className="space-y-5 lg:space-y-8">
-      <section className="rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
+      <section className="scroll-reveal rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
         <h1 className="mb-3 text-3xl font-bold text-cyan-300 sm:text-4xl">Get In Touch</h1>
         <p className="max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
           Have a question, collaboration idea, or internship opportunity? I would be happy to hear
@@ -58,7 +58,7 @@ export const Contact = () => {
         </p>
       </section>
 
-      <section className="grid grid-cols-1 gap-5 xl:grid-cols-[1.1fr_0.9fr]">
+      <section className="scroll-reveal grid grid-cols-1 gap-5 xl:grid-cols-[1.1fr_0.9fr]">
         <div className="rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
           <h2 className="mb-6 text-2xl font-semibold text-cyan-300">Send a Message</h2>
           <form onSubmit={handleSubmit} className="space-y-4">

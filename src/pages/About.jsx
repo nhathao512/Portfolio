@@ -48,7 +48,7 @@ export const About = () => {
 
   return (
     <div className="space-y-5 lg:space-y-8">
-      <section className="rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
+      <section className="scroll-reveal rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
         <h1 className="mb-5 text-3xl font-bold text-cyan-300 sm:text-4xl">About Me</h1>
         <p className="max-w-4xl text-base leading-relaxed text-gray-300 sm:text-lg">
           I am a passionate{" "}
@@ -62,7 +62,7 @@ export const About = () => {
         </p>
       </section>
 
-      <section className="rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
+      <section className="scroll-reveal rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
         <h2 className="mb-6 flex items-center gap-3 text-2xl font-semibold text-cyan-300">
           <GraduationCap size={26} />
           Education & Experience
@@ -96,7 +96,7 @@ export const About = () => {
         </div>
       </section>
 
-      <section className="rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
+      <section className="scroll-reveal rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
         <h2 className="mb-6 flex items-center gap-3 text-2xl font-semibold text-cyan-300">
           <Heart size={26} />
           Interests & Passions
