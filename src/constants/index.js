@@ -6,28 +6,28 @@ export const profileData = {
   contact: {
     email: "vonhathao.it@gmail.com",
     phone: "+84 334 944 908",
-    location: "Hồ Chí Minh, Việt Nam",
+    location: "Ho Chi Minh, Vietnam",
   },
   services: [
     {
       title: "Web Development",
       description: "High-quality development of websites at the professional level.",
-      icon: "💻",
+      icon: "web",
     },
     {
       title: "Web Design",
       description: "The most modern and high-quality design made at a professional level.",
-      icon: "🎨",
+      icon: "design",
     },
     {
       title: "Mobile Apps",
       description: "Professional development of applications for iOS and Android.",
-      icon: "📱",
+      icon: "mobile",
     },
     {
       title: "Photography",
       description: "I make high-quality photos of any category at a professional level.",
-      icon: "📸",
+      icon: "photo",
     },
   ],
   imageUrl: "/assets/avatar.jpg",

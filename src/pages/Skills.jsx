@@ -1,10 +1,11 @@
+import { Code2, Database, MonitorSmartphone, ServerCog, Smartphone, Wrench } from "lucide-react";
 import { Technologies } from "../components/common/Technologies";
 
 export const Skills = () => {
   const skillCategories = [
     {
       category: "Frontend Development",
-      icon: "🎨",
+      icon: MonitorSmartphone,
       skills: [
         { name: "React", projects: ["BAANHEM Shopping", "E-Commerce System"] },
         { name: "Angular", projects: ["Online Store"] },
@@ -15,7 +16,7 @@ export const Skills = () => {
     },
     {
       category: "Backend Development",
-      icon: "⚙️",
+      icon: ServerCog,
       skills: [
         { name: "Node.js", projects: ["BAANHEM Shopping"] },
         {
@@ -29,7 +30,7 @@ export const Skills = () => {
     },
     {
       category: "Mobile Development",
-      icon: "📱",
+      icon: Smartphone,
       skills: [
         {
           name: "Flutter",
@@ -45,7 +46,7 @@ export const Skills = () => {
     },
     {
       category: "Database & Storage",
-      icon: "💾",
+      icon: Database,
       skills: [
         { name: "MySQL", projects: ["Online Store", "Product Management"] },
         {
@@ -57,7 +58,7 @@ export const Skills = () => {
     },
     {
       category: "DevOps & Tools",
-      icon: "🚀",
+      icon: Wrench,
       skills: [
         { name: "Docker", projects: ["Online Store", "BAANHEM Shopping"] },
         { name: "Git", projects: ["All Projects"] },
@@ -67,52 +68,59 @@ export const Skills = () => {
   ];
 
   return (
-    <div className="rounded-2xl bg-gray-800/50 p-8 shadow-lg backdrop-blur-sm">
+    <section className="rounded-lg border border-white/10 bg-slate-900/65 p-5 shadow-2xl shadow-slate-950/20 backdrop-blur-xl sm:p-8">
       <div className="mb-8">
-        <h1 className="mb-3 text-4xl font-bold text-blue-400">Skills & Technologies</h1>
-        <p className="text-lg text-gray-400">
-          Technologies I&apos;ve worked with across my projects
+        <h1 className="mb-3 flex items-center gap-3 text-3xl font-bold text-cyan-300 sm:text-4xl">
+          <Code2 size={32} />
+          Skills & Technologies
+        </h1>
+        <p className="max-w-2xl text-base leading-relaxed text-gray-400 sm:text-lg">
+          Technologies I have used across coursework, product builds, and personal projects.
         </p>
       </div>
 
-      <div className="space-y-8">
-        {skillCategories.map((category, categoryIndex) => (
-          <div
-            key={categoryIndex}
-            className="rounded-xl bg-gray-700/30 p-6 backdrop-blur-sm transition-colors hover:bg-gray-700/40"
-          >
-            <h2 className="mb-5 flex items-center gap-3 text-2xl font-semibold text-blue-400">
-              <span className="text-3xl">{category.icon}</span>
-              {category.category}
-            </h2>
+      <div className="space-y-5">
+        {skillCategories.map((category) => {
+          const Icon = category.icon;
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              {category.skills.map((skill, skillIndex) => (
-                <div
-                  key={skillIndex}
-                  className="rounded-lg border border-gray-600/30 bg-gray-600/30 p-4 transition-all duration-300 hover:scale-[1.02] hover:border-blue-400/30 hover:bg-gray-600/50"
-                >
-                  <div className="mb-2 flex items-start justify-between">
-                    <h3 className="text-lg font-semibold text-blue-300">{skill.name}</h3>
+          return (
+            <article
+              key={category.category}
+              className="rounded-lg border border-white/10 bg-white/5 p-4 transition-colors hover:bg-white/10 sm:p-6"
+            >
+              <h2 className="mb-5 flex items-center gap-3 text-xl font-semibold text-white sm:text-2xl">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-cyan-300/10 text-cyan-300">
+                  <Icon size={22} />
+                </span>
+                {category.category}
+              </h2>
+
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                {category.skills.map((skill) => (
+                  <div
+                    key={skill.name}
+                    className="rounded-lg border border-white/10 bg-slate-950/30 p-4 transition-all duration-300 hover:border-cyan-300/30 hover:bg-cyan-300/10"
+                  >
+                    <h3 className="mb-3 text-lg font-semibold text-cyan-200">{skill.name}</h3>
+                    <div className="flex flex-wrap gap-1.5">
+                      {skill.projects.map((project) => (
+                        <span
+                          key={project}
+                          className="rounded-lg border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-gray-300"
+                        >
+                          {project}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {skill.projects.map((project, projectIndex) => (
-                      <span
-                        key={projectIndex}
-                        className="rounded-full border border-blue-400/30 bg-blue-500/20 px-2.5 py-1 text-xs text-blue-200"
-                      >
-                        {project}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+                ))}
+              </div>
+            </article>
+          );
+        })}
       </div>
 
       <Technologies />
-    </div>
+    </section>
   );
 };

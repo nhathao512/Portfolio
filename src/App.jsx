@@ -32,12 +32,12 @@ const App = () => {
       {/* Liquid Blob Background */}
       <div className="liquid-blob-bg"></div>
 
-      <div className="relative min-h-screen p-8 text-gray-100">
+      <div className="relative min-h-screen px-4 py-5 text-gray-100 sm:px-6 lg:px-8 lg:py-8">
         <div className="mx-auto max-w-7xl">
           <Header />
-          <div className="mt-8 grid grid-cols-1 items-start gap-8 md:grid-cols-4">
+          <div className="mt-5 grid grid-cols-1 items-start gap-5 lg:mt-8 lg:grid-cols-[minmax(260px,320px)_1fr] lg:gap-8">
             <Sidebar profile={profileData} />
-            <main className="md:col-span-3">
+            <main className="min-w-0">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />

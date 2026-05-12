@@ -1,9 +1,9 @@
 export const ProfileAvatar = ({ name, title, imageUrl }) => (
   <div className="flex flex-col items-center text-center">
-    <div className="mb-4 h-48 w-40 overflow-hidden rounded-2xl border-4 border-blue-400/30 shadow-xl transition-all hover:scale-105 hover:border-blue-400/50">
-      <img src={imageUrl} alt="Profile" className="h-full w-full object-cover" />
+    <div className="mb-4 aspect-[4/5] w-32 overflow-hidden rounded-lg border border-cyan-300/30 bg-slate-900/60 shadow-xl shadow-slate-950/30 transition-all hover:border-cyan-300/60 sm:w-40 lg:w-full lg:max-w-40">
+      <img src={imageUrl} alt={name} className="h-full w-full object-cover" />
     </div>
-    <h1 className="mb-1 text-xl font-bold text-blue-400">{name}</h1>
-    <p className="mb-6 text-sm text-gray-400">{title}</p>
+    <h1 className="mb-1 text-xl font-bold text-cyan-300">{name}</h1>
+    <p className="mb-6 max-w-xs text-sm leading-relaxed text-gray-400">{title}</p>
   </div>
 );

@@ -2,14 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Liquid Blob Background */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background: #0b1020;
+    font-family:
+      Inter,
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
 .liquid-blob-bg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #0f172a;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.14), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(244, 114, 182, 0.12), transparent 32%),
+    linear-gradient(135deg, #0b1020 0%, #101827 48%, #111827 100%);
   z-index: -1;
   overflow: hidden;
 }
@@ -22,7 +45,7 @@
 }
 
 .blob1 {
-  background: rgba(59, 130, 246, 0.4);
+  background: rgba(45, 212, 191, 0.28);
   width: 400px;
   height: 400px;
   top: 20%;
@@ -30,7 +53,7 @@
 }
 
 .blob2 {
-  background: rgba(14, 165, 233, 0.4);
+  background: rgba(96, 165, 250, 0.26);
   width: 350px;
   height: 350px;
   top: 50%;
@@ -39,7 +62,7 @@
 }
 
 .blob3 {
-  background: rgba(56, 189, 248, 0.3);
+  background: rgba(251, 191, 36, 0.16);
   width: 300px;
   height: 300px;
   top: 70%;
@@ -60,5 +83,29 @@
   }
   75% {
     transform: translate(30px, 50px) scale(1.05);
+  }
+}
+
+@media (max-width: 640px) {
+  .blob {
+    filter: blur(44px);
+  }
+
+  .blob1,
+  .blob2,
+  .blob3 {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

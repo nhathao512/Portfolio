@@ -1,19 +1,19 @@
 import {
-  FaNodeJs,
-  FaJava,
+  FaAws,
+  FaBootstrap,
+  FaCss3,
   FaDatabase,
-  FaReact,
   FaDocker,
   FaGit,
-  FaPython,
-  FaJsSquare,
   FaHtml5,
-  FaCss3,
+  FaJava,
+  FaJsSquare,
+  FaNodeJs,
   FaPhp,
-  FaBootstrap,
-  FaAws,
+  FaPython,
+  FaReact,
 } from "react-icons/fa";
-import { SiSpringboot, SiMongodb, SiC } from "react-icons/si";
+import { SiC, SiMongodb, SiSpringboot } from "react-icons/si";
 
 export const Technologies = () => {
   const techStack = [
@@ -36,17 +36,18 @@ export const Technologies = () => {
   ];
 
   return (
-    <div className="mt-8 overflow-hidden rounded-2xl bg-gradient-to-r from-gray-800 via-gray-800 to-gray-900 p-6 shadow-lg">
-      <h2 className="mb-4 text-xl font-bold text-blue-400">Technologies</h2>
-      <div className="flex animate-marquee space-x-12">
-        {techStack.map((tech, index) => {
+    <div className="mt-8 overflow-hidden rounded-lg border border-white/10 bg-slate-950/40 p-5 shadow-xl shadow-slate-950/10">
+      <h2 className="mb-4 text-xl font-bold text-cyan-300">Technologies</h2>
+      <div className="flex w-max animate-marquee gap-10 pr-10 hover:[animation-play-state:paused]">
+        {[...techStack, ...techStack].map((tech, index) => {
           const TechIcon = tech.icon;
+
           return (
             <div
-              key={index}
-              className="flex flex-col items-center justify-center text-gray-300 transition-colors duration-300 hover:text-blue-400"
+              key={`${tech.name}-${index}`}
+              className="flex min-w-20 flex-col items-center justify-center text-gray-300 transition-colors duration-300 hover:text-cyan-300"
             >
-              <TechIcon className="mb-2 h-12 w-12" />
+              <TechIcon className="mb-2 h-10 w-10 sm:h-12 sm:w-12" />
               <span className="text-sm">{tech.name}</span>
             </div>
           );

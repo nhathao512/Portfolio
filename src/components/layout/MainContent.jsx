@@ -1,9 +1,9 @@
-import { About } from "../pages/About";
-import { Services } from "./Services";
-import { Technologies } from "./Technologies";
+import { About } from "../../pages/About";
+import { Technologies } from "../common/Technologies";
+import { Services } from "../features/Services";
 
 export const MainContent = ({ profile }) => (
-  <div className="md:col-span-3">
+  <div className="space-y-5 lg:space-y-8">
     <About about={profile.about} />
     <Services services={profile.services} />
     <Technologies />
